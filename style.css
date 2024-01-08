@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+*{
+
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #1b154d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+}
+.container{
+    background: linear-gradient(60deg, #3c4ef0, #c42eff);
+    width: 330px;
+    padding: 50px 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 15px #7d54ee;
+    position: relative;
+}
+.container .content{
+    position: relative;
+    z-index: 1;
+}
+.container .bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.06;
+	filter: brightness(1000%);
+}
+.container h2{
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.container .search {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+.container .search input{
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #1b154d;
+    color: #fff;
+    outline: none;
+    padding: 0 48px 0 10px;
+    font-size: 20px;
+}
+.container .search button{
+    position: absolute;
+    right: 0;
+    height: 38px;
+    border: none;
+    aspect-ratio: 1;
+    font-size: 20px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+.container .tcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.container .tcon .left .temp{
+    font-size: 50px;
+    font-weight: 700;
+}
+.container .tcon .right img{
+    filter: brightness(1000%);
+    margin-top: -40px;
+}
+.container .tcon .right span{
+    text-align: center;
+    display: block;
+    margin-top: -20px;
+}
+.container .additional{
+    display: flex;
+    justify-content: space-between;
+}
+.container .additional > div{
+    display: flex;
+    gap:8px;
+}
+.container .additional i{
+    font-size: 40px;
+}
+.container .additional span{
+    font-size: 20px;
+}
+.container .additional .hum span::after{
+    content: "Humidity";
+    display: block;
+    font-size: 10px;
+}
+.container .additional .wind span::after{
+    content: "Wind Speed";
+    display: block;
+    font-size: 10px;
+}
